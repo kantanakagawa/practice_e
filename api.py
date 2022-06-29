@@ -25,11 +25,11 @@ def get_info(numbers):
         dic = response.json()
 
         title = dic["title"]
-        url = dic["url"]
+
         if "url" in dic:
-            
+            url = dic["url"]
             print(f"'title':'{title}','link':'{url}'")
-       
+
         else:
             print(f"'title':{title}")
 
